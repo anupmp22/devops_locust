@@ -5,6 +5,9 @@ provider "aws" {
 resource "aws_instance" "devops" {
    ami = "ami-0d542ef84ec55d71c"
    instance_type = "t2.micro"
+    tags = {
+    Name = "firsttag"
+  }
 }
 
 resource "aws_security_group" "allow_rdp" {
