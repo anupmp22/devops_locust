@@ -17,7 +17,7 @@ name= "allow_rdp"
 from_port  =22
     to_port     =22
     protocol    = "tcp"
-    cidr_blocks = ["3.14.82.199/32"]
+    cidr_blocks = ["192.168.33.11/32"]
 }
 
 ingress {
