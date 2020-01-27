@@ -8,10 +8,11 @@ resource "aws_instance" "devops_locust" {
     tags = {
     Name = "firsttag"
   }
+    security_groups = [ "${aws_security_group.SG_locust.name}"]
 }
 
-resource "aws_security_group" "allow_rdp" {
-name= "allow_rdp"
+resource "aws_security_group" "SG_locust" {
+name= "SG_locust"
  ingress {
 
 from_port  =22
