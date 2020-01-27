@@ -19,7 +19,7 @@ name= "SG_locust"
 from_port  =22
     to_port     =22
     protocol    = "tcp"
-    cidr_blocks = ["192.168.33.11/32"]
+    cidr_blocks = ["59.162.161.225/32"]
 }
 
 ingress {
