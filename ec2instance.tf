@@ -5,6 +5,7 @@ provider "aws" {
 resource "aws_instance" "devops_locust" {
    ami = "ami-0d542ef84ec55d71c"
    instance_type = "t2.micro"
+   key_name = "locust" 
     tags = {
     Name = "firsttag"
   }
