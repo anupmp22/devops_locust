@@ -2,7 +2,7 @@ provider "aws" {
     region = "us-east-2"
 }
 
-resource "aws_instance" "devops" {
+resource "aws_instance" "devops_locust" {
    ami = "ami-0d542ef84ec55d71c"
    instance_type = "t2.micro"
     tags = {
